@@ -10,19 +10,31 @@ usage:
 	
 	namespace sqlitrep
 	{
-
+		
 		class Program
 		{
-
+			
 			static void Main(string[] args)
 			{
-
+				
 				new CMDMain<IExecutorImpementer>().Run(args);
 				
 			}
-
+			
 		}
-
+		
 	}
 
-Thats it.
+Arguments:
+
+-con - The connection string
+
+-out - Log the output. Can be followed by the path of a file to use otherwise the file is created for use in the working directory.
+
+-cmd - The provided command as text or as a file path.
+
+-q - Quit straight away; does not enter the repl.
+
+
+
+That's it.
